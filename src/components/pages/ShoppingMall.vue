@@ -61,7 +61,7 @@
                 <van-list>
                     <van-row gutter="20">
                         <van-col span="12" v-for="(item , index) in hotGoods" :key="index">
-                                <goods-info :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price">
+                                <goods-info :goodsId="item.goodsId" :goodsImage="item.image" :goodsName="item.name" :goodsPrice="item.price">
 
                                 </goods-info>
                         </van-col>
@@ -112,6 +112,8 @@
         },
         components:{swiper,swiperSlide,floorComponent,goodsInfo},
         created(){
+            console.log('111');
+            
             axios({
                 url:url.getShopingMallInfo,
                 method:'get',
@@ -182,6 +184,7 @@
         padding:.3rem;
         font-size:12px;
         text-align: center;
+        flex:1;
     }
     .recommend-area{
         background-color: #fff;
@@ -207,6 +210,11 @@
         font-size:14px;
         height: 1.8rem;
         line-height:1.8rem;
+    }
+    .hot-goods{
+        height: 130rem;
+        overflow: hidden;
+        background-color: #fff;
     }
     
 
