@@ -1,5 +1,8 @@
 const BASEURL = "https://www.easy-mock.com/mock/5ae2eeb23fbbf24d8cd7f0b6/SmileVue/"
+// 后台配置跨域
 const LOCALURL = "http://localhost:3000/"
+// 代理
+// const LOCALURL = "/api/"
 const URL ={
     getShopingMallInfo : BASEURL+'index',    //商城首页所有信息
     getGoodsInfo : BASEURL+'getGoodsInfo', 
