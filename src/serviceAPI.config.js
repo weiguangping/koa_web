@@ -1,4 +1,4 @@
-const BASEURL = "https://www.easy-mock.com/mock/5ae2eeb23fbbf24d8cd7f0b6/SmileVue/"
+const BASEURL = "https://www.easy-mock.com/mock/5b7d2b92fe4ed456a9809731/smilevue/"
 // 后台配置跨域
 const LOCALURL = "http://localhost:3000/"
 // 代理
